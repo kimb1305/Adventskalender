@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6efe5"><meta name="robots" content="noindex,nofollow">
+<title>Ein kleines Stück Wir</title>
+<style>
+:root{--paper:#f6efe5;--ink:#423c35;--muted:#70675d;--rose:#914d4d;--line:#dcd1c3;--green:#e4e8dc}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 10% 0%,#e8c6bd66,transparent 50%),radial-gradient(ellipse at 100% 80%,#dce2cf77,transparent 45%);z-index:-1}main{width:min(760px,100%);margin:auto;padding:32px 22px 18px}header{text-align:center;padding:20px 0 28px}.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted)}.seal{display:grid;place-items:center;width:56px;height:56px;margin:22px auto;color:var(--rose);font-size:33px;border:1px solid #bd8b7b;border-radius:50%;transform:rotate(-9deg)}h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.12}h1{font-size:clamp(40px,8vw,66px);margin:12px 0 20px;letter-spacing:-2px}h1 em{color:var(--rose);font-weight:400}header p{max-width:440px;margin:0 auto;color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mood{display:flex;align-items:center;text-align:left;gap:14px;padding:20px 16px;border:1px solid var(--line);border-radius:16px;background:#fffaf3;cursor:pointer;color:var(--ink);min-width:0}.mood:nth-child(2){background:#e8ebdf}.mood:nth-child(3){background:#efdad5}.mood:nth-child(4){background:#eee3cd}.icon{font-size:25px}.mood strong{display:block;font:21px Georgia,serif}.mood small{display:block;color:var(--muted);font-size:12px;margin-top:5px}button{font:inherit;touch-action:manipulation}button:hover{filter:brightness(.97)}button:focus-visible,summary:focus-visible{outline:3px solid var(--rose);outline-offset:4px}.mood[aria-pressed=true]{border-color:var(--rose);box-shadow:0 0 0 1px var(--rose)}.letter{position:relative;background:#fffcf7;border:1px solid var(--line);border-radius:16px;padding:26px;margin:16px 0 0;scroll-margin-top:20px}.label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rose)}blockquote{font:24px/1.5 Georgia,serif;margin:14px 0 20px}.textbutton{border:0;background:transparent;color:var(--rose);padding:10px 0;cursor:pointer;text-decoration:underline;text-underline-offset:5px;min-height:44px}.divider{text-align:center;margin:32px 0 22px;color:#ab8f76;font-size:18px;letter-spacing:14px}.datebox{padding:28px;border:1px solid #cbd0bf;border-radius:22px;background:var(--green)}.datebox h2{font-size:34px;margin:8px 0 12px}.datebox>p{color:#5d6555;margin:0 0 20px}.primary{background:var(--rose);color:#fffaf3;border:0;border-radius:100px;padding:14px 24px;cursor:pointer;min-height:50px}.result{margin-top:22px;border-top:1px solid #bfc6b3;padding-top:20px}.result h3{font-size:27px;margin:9px 0}.result p{margin:10px 0 0}.tag{font-size:12px;color:#5c654e}.memories{padding:30px 0 12px}.memories h2{font-size:29px;margin:8px 0 18px}.keepsake{padding:22px;border:1px dashed #bba994;border-radius:14px;text-align:center;background:#ffffff33}.keepsake p{margin:5px 0;color:var(--muted)}.keepsake .heart{font:38px Georgia,serif;color:var(--rose)}figure{margin:0}figure img{width:100%;max-height:440px;object-fit:cover;border:9px solid #fffaf3;border-radius:4px;box-shadow:0 8px 20px #423c3510}figcaption{text-align:center;font:italic 19px Georgia,serif;padding:12px}audio{display:block;width:100%;margin-top:15px}footer{text-align:center;color:var(--muted);font:italic 17px Georgia,serif;padding:30px 0}footer span{color:var(--rose)}[hidden]{display:none!important}@media(max-width:420px){main{padding:22px 16px}.mood{padding:18px 12px;gap:9px}.mood strong{font-size:19px}.icon{font-size:21px}.mood small{font-size:11px}.datebox{padding:23px}blockquote{font-size:23px}}@media(prefers-reduced-motion:no-preference){button{transition:transform .18s,filter .18s}button:active{transform:scale(.98)}.letter,.result{animation:appear .35s ease}@keyframes appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="eyebrow">Eine kleine Adventsüberraschung</div><div class="seal" aria-hidden="true">♡</div><h1>Was brauchst du<br><em>gerade?</em></h1><p id="intro">Ein bisschen Nähe, ein paar liebe Worte oder einen Plan für uns zwei? Hier ist ein kleines Stück Wir. Für dich. Immer wieder.</p></header>
+<section aria-label="Liebe Worte für deinen Moment"><div class="grid">
+<button class="mood" data-mood="vermissen" aria-pressed="false" aria-controls="letter"><span class="icon" aria-hidden="true">☾</span><span><strong>Vermissen</strong><small>Ein bisschen näher sein</small></span></button>
+<button class="mood" data-mood="tag" aria-pressed="false" aria-controls="letter"><span class="icon" aria-hidden="true">☁</span><span><strong>Schlechter Tag</strong><small>Hier darfst du durchatmen</small></span></button>
+<button class="mood" data-mood="liebe" aria-pressed="false" aria-controls="letter"><span class="icon" aria-hidden="true">♡</span><span><strong>Liebe</strong><small>Nur falls du es vergisst</small></span></button>
+<button class="mood" data-mood="motivation" aria-pressed="false" aria-controls="letter"><span class="icon" aria-hidden="true">✧</span><span><strong>Motivation</strong><small>Ich glaub an dich</small></span></button>
+</div><div class="letter" id="letter" hidden><div role="status" aria-live="polite" aria-atomic="true"><span class="label" id="letterLabel"></span><blockquote id="message"></blockquote></div><button class="textbutton" id="another">Noch ein paar liebe Worte ↗</button></div></section>
+<div class="divider" aria-hidden="true">· ♡ ·</div>
+<section class="datebox" aria-labelledby="dateTitle"><span class="label">Zeit statt Zeug</span><h2 id="dateTitle">Du + ich + eine Idee.</h2><p>Wenn „Was machen wir?“ mal wieder die schwierigste Frage des Abends ist: Lass den Zufall entscheiden.</p><button class="primary" id="draw">Zieh unser nächstes Date ✧</button><div class="result" id="dateResult" role="status" aria-live="polite" aria-atomic="true" hidden><span class="tag" id="dateMeta"></span><h3 id="dateName"></h3><p id="dateText"></p></div></section>
+<section class="memories" aria-labelledby="memoryTitle"><span class="label">Mein Lieblingsplatz? Bei dir.</span><h2 id="memoryTitle"></h2><figure id="photoBlock" hidden><img id="photo" alt=""><figcaption id="caption"></figcaption></figure><div class="keepsake" id="photoPlaceholder"><div class="heart" aria-hidden="true">♡</div><p>Die schönsten Erinnerungen<br>haben wir noch vor uns.</p></div><div id="voiceBlock" hidden><p>Ein bisschen von meiner Stimme. Nur für dich.</p><audio id="voice" controls preload="none">Dein Browser unterstützt keine Audiowiedergabe.</audio><p id="voiceError" hidden>Die Aufnahme lässt sich gerade nicht laden.</p></div></section>
+<footer id="signature">Mit ganz viel Liebe <span>♡</span></footer>
+<noscript><p>Bitte aktiviere JavaScript, damit du die Nachrichten öffnen und ein Date ziehen kannst. Bis dahin: Du bist mein Lieblingsmensch. ♡</p></noscript>
+</main>
+<script>
+/* ♥ HIER ANPASSEN ♥
+   Du kannst alles so lassen: Die Seite ist sofort fertig.
+   Texte zwischen Anführungszeichen ändern. Anführungszeichen im Text als \" schreiben.
+   Optional: foto.jpg und nachricht.mp3 in denselben Ordner wie index.html legen
+   und die leeren Felder unten durch die Dateinamen ersetzen.
+   Zum Weglassen bleiben foto und sprachnachricht einfach leer.
+*/
+const INHALT = {
+  intro: "Ein bisschen Nähe, ein paar liebe Worte oder einen Plan für uns zwei? Hier ist ein kleines Stück Wir. Für dich. Immer wieder.",
+  unterschrift: "Mit ganz viel Liebe ♡",
+  foto: "/Users/kimbackherms/Pictures/Photos Library.photoslibrary/resources/derivatives/E/E4DFADBA-2D95-4FD9-940D-C10A3B702D43_1_102_o.jpeg", // z. B. "foto.jpg"
+  fotoBeschreibung: "Ein schöner gemeinsamer Moment von uns beiden",
+  fotoText: "Du und ich. Genau hier möchte ich sein.",
+  sprachnachricht: "", // z. B. "nachricht.mp3"
+  nachrichten: {
+    vermissen: [
+      "Wenn ich jetzt bei dir wäre, würde ich mich ganz nah an dich kuscheln und noch ein kleines bisschen länger bleiben. Denk dir meine Arme um dich. Die Umarmung holen wir nach.",
+      "Ich vermisse nicht nur die großen Dinge mit dir. Auch dein verschlafenes Gesicht, unsere kleinen Gespräche und dieses schöne Gefühl, wenn du einfach da bist.",
+      "Bis wir uns wiedersehen, schicke ich dir einen Kuss für die Stirn, einen für die Nase und einen, den du dir aussuchen darfst.",
+  
+    ],
+    tag: [
+      "Du musst heute nichts schönreden. Wenn dein Tag doof ist, darf er doof sein. Ich hab dich auch mit müdem Kopf, schlechter Laune und null Energie lieb.",
+      "Mach kurz die Schultern locker. Trink einen Schluck Wasser. Atme durch. Du musst nicht den ganzen Tag auf einmal schaffen. Nur den nächsten kleinen Moment.",
+      "Bei mir musst du nichts leisten, um geliebt zu werden. Du darfst einfach du sein. Auch heute. Besonders heute.",
+      "Wenn du reden möchtest, höre ich dir zu. Wenn du Ruhe brauchst, setze ich mich gedanklich leise neben dich. Und wenn du Ablenkung brauchst: Ich bin bereit für sehr schlechte Witze."
+    ],
+    liebe: [
+      "Von all den Zufällen, die mir passieren könnten, bist du mein liebster. Wie schön, dass es ausgerechnet uns gibt.",
+      "Ich liebe die großen Momente mit dir. Aber noch ein bisschen mehr liebe ich, dass selbst die ganz normalen Tage mit dir besonders sind.",
+      "Nur eine kleine Erinnerung: Ich würde dich wieder wählen. Auch mit der letzten Pommes auf deinem Teller, die eigentlich mir gehört.",
+      "Du bist der Mensch, dem ich die kleinen Dinge erzählen möchte. Den Quatsch. Die guten Nachrichten. Alles dazwischen. Das ist für mich ziemlich viel Liebe."
+    ],
+    motivation: [
+      "Du musst nicht schon wissen, wie der ganze Weg aussieht. Der nächste kleine Schritt reicht. Ich glaube an dich, auch wenn du selbst gerade zweifelst.",
+      "Du hast schon so vieles geschafft, das sich vorher riesig angefühlt hat. Gib dir Zeit. Ich bin stolz auf dich, auch mitten auf dem Weg.",
+      "Eine Pause macht deine Mühe nicht kleiner. Hol Luft, sammle dich, und dann geht es in deinem Tempo weiter. Ich feuere dich an.",
+      "Du brauchst heute keinen perfekten Plan. Fang mit einer kleinen Sache an. Und danach darfst du dir ruhig mal selbst auf die Schulter klopfen. Ich würde es jedenfalls tun."
+    ]
+  },
+  dates: [
+    ["Wohnzimmer-Picknick", "Zuhause · 1 Stunde · kleines Budget", "Decke auf den Boden, Lieblingssnacks dazu und die Handys außer Reichweite. Wir tun so, als wäre der Teppich unser schönster Urlaubsort."],
+    ["Spaziergang mit warmen Händen", "Draußen · 45 Minuten · kostenlos", "Wir ziehen uns warm an, gehen ohne festes Ziel los und erzählen uns je drei kleine Dinge, die wir aneinander mögen."],
+    ["Blindes Snack-Tasting", "Zuhause · 30 Minuten · kleines Budget", "Jeder sucht drei Snacks aus. Mit geschlossenen Augen wird probiert, geraten und sehr streng bewertet."],
+    ["Unser kleines Heimkino", "Zuhause · ein Abend · kostenlos mit vorhandenem Film", "Kuscheldecke, Popcorn und ein Film, den einer von uns liebt. Der andere darf den nächsten aussuchen. Der beste Platz ist direkt nebeneinander."],
+    ["Frühstück im Schlafanzug", "Zuhause · 1 Stunde · kleines Budget", "Wir machen ein gemütliches Frühstück und bleiben absichtlich ein bisschen länger sitzen. Heute gibt es keine Eile."],
+    ["Ein Euro, eine Überraschung", "Unterwegs · 1 Stunde · bis 2 Euro", "Jeder hat einen Euro und sucht eine Kleinigkeit, die den anderen zum Lächeln bringt. Anschließend wird feierlich ausgepackt."],
+    ["Küchen-Duett", "Zuhause · 1–2 Stunden · nach Vorrat", "Wir kochen gemeinsam aus dem, was schon da ist. Dazu läuft unsere Musik. Eine kleine Tanzpause in der Küche ist ausdrücklich eingeplant."],
+    ["Sterne & Zukunftspläne", "Am Fenster oder draußen · 30 Minuten · kostenlos", "Mit einer Decke schauen wir in den Abendhimmel. Jeder erzählt von einem Ort, den wir zusammen sehen möchten, und einem ganz kleinen Wunsch für uns."],
+    ["Porträts mit Lachgarantie", "Zuhause · 30 Minuten · Papier & Stifte", "Wir zeichnen uns gegenseitig. Fünf Minuten Zeit, kein Radiergummi, keine Ansprüche. Danach bekommt jedes Kunstwerk einen sehr wichtigen Titel."],
+    ["Wellness für zwei", "Zuhause · 45 Minuten · kostenlos", "Warmes Licht, ruhige Musik und abwechselnd eine kleine Hand- oder Schultermassage. Für einmal hat der restliche Tag Pause."],
+    ["Einfach nur wir", "Zuhause · 15 Minuten", "Unter eine Decke kuscheln, die Augen schließen und kurz nichts müssen. Außer vielleicht noch ein bisschen näher zusammenrücken."],
+    ["Ein Brief an unser Zukunfts-Wir", "Zuhause · 30 Minuten · kostenlos", "Wir schreiben auf, was wir gerade an uns lieben und worauf wir uns freuen. Zusammenfalten, Datum drauf und in einem Jahr gemeinsam öffnen."],
+    ["Plätzchen & Chaos", "Zuhause · 1–2 Stunden · kleines Budget", "Wir backen etwas Einfaches. Einer kümmert sich um den Teig, der andere um Musik und Probieren. Die schiefsten Stücke schmecken bekanntlich am besten."],
+    ["Wer bin ich?", "Zuhause · 30 Minuten · kostenlos", "Wir fragen Chat nach einem Begriff aus dem Haus, den der andere erraten muss."],
+    ["Weißt du noch?", "Zuhause · 20 Minuten", "Wir schauen gemeinsam durch unsere Fotos und erzählen uns, an welche Momente wir besonders gern zurückdenken."],
+    ["Foto-Challenge", "Zuhause · 30 Minuten · kostenlos", "Wir haben eine halbe Stunde Zeit, um das beste Foto von uns aus der Galerie zu finden. Danach zeigen wir uns gegenseitig unsere Favoriten und erzählen, warum wir sie ausgewählt haben."]
+  ]
+};
+// Ab hier ist alles fertig eingerichtet.
+const $ = id => document.getElementById(id);
+$('intro').textContent=INHALT.intro;$('signature').textContent=INHALT.unterschrift;
+let currentMood=null;
+const previous={};
+function randomIndex(n){
+  if(n<2)return 0;
+  if(globalThis.crypto?.getRandomValues){const a=new Uint32Array(1);const limit=4294967296-(4294967296%n);do{crypto.getRandomValues(a)}while(a[0]>=limit);return a[0]%n;}
+  return Math.floor(Math.random()*n);
+}
+function choose(list,key){let indices=list.map((_,i)=>i).filter(i=>i!==previous[key]);if(!indices.length)indices=[0];const i=indices[randomIndex(indices.length)];previous[key]=i;return list[i];}
+function showMessage(){if(!currentMood)return;$('message').textContent=choose(INHALT.nachrichten[currentMood],currentMood);}
+document.querySelectorAll('[data-mood]').forEach(button=>button.addEventListener('click',()=>{
+  currentMood=button.dataset.mood;
+  document.querySelectorAll('[data-mood]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  $('letterLabel').textContent=button.querySelector('strong').textContent+' · für dich';
+  $('letter').hidden=false;showMessage();
+}));
+$('another').addEventListener('click',showMessage);
+$('draw').addEventListener('click',()=>{const [name,meta,description]=choose(INHALT.dates,'dates');$('dateName').textContent=name;$('dateMeta').textContent=meta;$('dateText').textContent=description;$('dateResult').hidden=false;$('draw').textContent='Noch eine Idee ziehen ↻';});
+if(INHALT.foto){$('photo').alt=INHALT.fotoBeschreibung;$('caption').textContent=INHALT.fotoText;$('photo').addEventListener('error',()=>{$('photoBlock').hidden=true;$('photoPlaceholder').hidden=false;});$('photo').src=INHALT.foto;$('photoBlock').hidden=false;$('photoPlaceholder').hidden=true;}
+if(INHALT.sprachnachricht){$('voice').src=INHALT.sprachnachricht;$('voiceBlock').hidden=false;$('voice').addEventListener('error',()=>{$('voice').hidden=true;$('voiceError').hidden=false;});}
+</script>
+</body>
+</html>
